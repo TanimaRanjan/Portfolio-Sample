@@ -1,26 +1,58 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Header from './components/header'
+import Gallery from './components/gallery'
+
+
+
+
+ class App extends React.Component {
+  constructor() {
+    super()
+
+    this.state = { 
+      design_photo:''
+    }
+
+  }
+
+  handleSelection = (selection) => {
+  //  e.preventDefault()
+   // console.log(e)
+    console.log(selection)
+    this.setState(
+      {design_photo:selection}
+    )
+  
+  }
+
+  render() {
+    return (
+      <div className="App">
+        {
+          /******************
+           * Header 
+           * ** Logo 
+           * ** Design
+           * ** Photography
+           * 
+           * Homepage
+           * ** Gallery
+           * ** ** GalleryItem
+           * ** ** ** Image  
+           * 
+           * Photo Modal
+           * 
+           ******************/
+        }
+
+        <Header handleSelection={this.handleSelection} />
+        <Gallery selected={this.state.design_photo}/>
+
+      </div>
+    );
+  }
 }
 
 export default App;
