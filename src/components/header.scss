@@ -1,0 +1,55 @@
+.header {
+    // Header
+    height:80px;
+  }
+
+#logo {
+    display: inline-block;
+    //  width: 30.8rem;
+     width: 380px;
+     height: 14rem;
+    // margin: 0;
+    background:url(/images/logo.png) no-repeat scroll right top transparent;
+     text-indent: -5000px;
+    cursor: pointer;
+    
+}
+
+
+.nav {
+    display: flex;
+   // background: #282c34;
+    background: rgba(0, 0, 0, 0);
+    color:#EDF2F4;
+    position:fixed;
+    width: 100%;
+    z-index: 200;
+
+    &__span {
+        display:flex;
+        width: 100%;
+        height: 14rem;
+        background-color: #000;
+        // padding-left: 8rem;
+         align-items:flex-end;
+        //  text-transform: uppercase;
+        // flex:1;
+    }
+
+    &__header {
+        // border: 1px solid white;
+         padding:1rem 1rem 4.1px;
+        //  font-size: 3rem;
+        //padding:0;
+        cursor: pointer;
+        // padding-left:8vmin;
+       // text-transform: uppercase;
+       
+
+       &:hover {
+        opacity:.8;
+       }
+    }
+}
+
+
