@@ -74,7 +74,7 @@ class Gallery extends React.Component {
                 {
                     id:22, "source": "./images/pic12_d.jpg", 
                      "height": 690, "width": 400, "category":"design"},
-                    {
+                {
                         id:3,"source": "./images/pic2_d.jpg", 
                         "height": 303, "width": 400, "category":"design"}, 
             ],
