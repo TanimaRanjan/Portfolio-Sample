@@ -1,5 +1,7 @@
 import React from 'react'
 
+import LazyImage from './lazy-image'
+
 import './gallery-item.scss'
 
 
@@ -13,11 +15,11 @@ const GalleryItem  = (props) =>  {
         return (
         
             <div className='gallery-item' style={galleryItemStyle} >
-            <img className='gallery-image'
+            <LazyImage className='gallery-image'
                 src={props.source} 
                 alt='grid item' 
-                onClick={() => props.handleClick(props.source)}
-                />
+                handleClick={props.handleClick}
+                ></LazyImage>
                 <div className='space'>&nbsp;</div>
             </div>   
         )    

@@ -4,13 +4,11 @@ import './App.scss';
 import Header from './components/header'
 import Gallery from './components/gallery'
 
-
-
+import scrollToTop from './components/util'
 
  class App extends React.Component {
   constructor() {
     super()
-
     this.state = { 
       design_photo:''
     }
@@ -18,14 +16,13 @@ import Gallery from './components/gallery'
   }
 
   handleSelection = (selection) => {
-  //  e.preventDefault()
-   // console.log(e)
-    console.log(selection)
+    scrollToTop()
     this.setState(
       {design_photo:selection}
     )
   
   }
+
 
   render() {
     return (

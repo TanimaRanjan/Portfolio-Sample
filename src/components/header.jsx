@@ -13,18 +13,23 @@ const Header = (props) => (
            * ** ** ** Design
            * ** ** ** Photography
            ******************/}
+           
            <nav className='nav'>
-            <span id='logo' className='nav__logo' onClick={() => props.handleSelection('')}>Jamaal Nelson</span>
-            <span className='nav__span'>
-                <h1 
-                    className='nav__header' 
-                    onClick={() => props.handleSelection('design')}
-                    >Design</h1>
-                <h1 
-                    className='nav__header' 
-                    onClick={() => props.handleSelection('photography')}
-                    >Photography</h1>   
-            </span>
+            <div className='nav__space'>&nbsp;</div>
+            <div className='nav__main'>
+                <span id='logo' className='nav__logo' onClick={() => props.handleSelection('')}>Jamaal Nelson</span>
+                <span className='nav__span'>
+                    <h1 
+                        className='nav__header' 
+                        onClick={() => props.handleSelection('design')}
+                        >Design</h1>
+                    <h1 
+                        className='nav__header' 
+                        onClick={() => props.handleSelection('photography')}
+                        >Photography</h1>   
+                </span>
+            </div>
+            <div className='nav__space'>&nbsp;</div>
             </nav>
     </header>
 
