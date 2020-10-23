@@ -1,6 +1,6 @@
 import React from 'react'
 
-import LazyImage from './lazy-images'
+import LazyImage from './lazy-image'
 
 import './gallery-item.scss'
 

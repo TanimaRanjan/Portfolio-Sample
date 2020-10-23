@@ -58,15 +58,13 @@ html {
   //   font-size: 50%;
   // }
   scroll-behavior: smooth;
+  overscroll-behavior: none;
   background-color: white;
 }
 
 body {
   text-align: center;
   overflow: auto;
-}
-
-body {
   margin: 0;
-
 }
+
